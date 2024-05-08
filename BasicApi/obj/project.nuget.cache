@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XMtTJRlnxJjr23iSassLv2qSpuei0GdY+JCdBzQ3bYVFyW3mI1kPHJKHtTcrMCqx1EDudSW37oTT4zMb+slZZQ==",
+  "dgSpecHash": "COhDclYevjNFUX/2aPP/MzkFUnPIHTD8xIkSaVNSRFqRJir/Pk6TxgFLWeaW5HLZZkYKkK4ruI1UIzBYDwTYVA==",
   "success": true,
-  "projectFilePath": "R:\\Api\\BasicApi\\BasicApi\\BasicApi\\BasicApi.csproj",
+  "projectFilePath": "F:\\CSharp\\Api\\BasicApi\\BasicApi\\BasicApi\\BasicApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Reden\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Reden\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

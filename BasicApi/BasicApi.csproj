@@ -26,10 +26,10 @@
 
   <ItemGroup>
     <Reference Include="BackEnd">
-      <HintPath>..\..\..\..\CSharp\Project\BackEnd\BackEnd\bin\Debug\BackEnd.dll</HintPath>
+      <HintPath>..\..\..\..\Project\BackEnd\BackEnd\bin\Debug\BackEnd.dll</HintPath>
     </Reference>
     <Reference Include="BackendPw">
-      <HintPath>..\..\..\..\CSharp\Project\BackEndPw\BackendPw\BackendPw\bin\Release\BackendPw.dll</HintPath>
+      <HintPath>..\..\..\..\Project\BackEndPw\BackendPw\BackendPw\bin\Release\BackendPw.dll</HintPath>
     </Reference>
   </ItemGroup>
 
