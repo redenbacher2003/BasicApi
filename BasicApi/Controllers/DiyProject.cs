@@ -32,7 +32,7 @@ namespace BasicApi.Controllers
         [HttpGet("GetMaterialsByProjectId_Async")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [EnableCors("OpenCORSPolicy")]
-        public async Task<string> GetMaterialsByProjectId_Async(int diyProjectId)
+        public async Task<string> GetMaterialsByProjectId_Async(int diyProjectId)   
         {
         
             return await _manager.getMaterialsByProjectId_Async(diyProjectId);
@@ -42,9 +42,14 @@ namespace BasicApi.Controllers
         [HttpPost("createProject_Async")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [EnableCors("OpenCORSPolicy")]
-        public async Task<IActionResult> createProject_Async([FromBody] DiyProject diyProject)
+        public async Task<IActionResult> createProject_Async([FromBody] BackendPw.CustomObject.DiyProject diyProject)
         {
-            return Ok(await _manager.addProject_Async(diyProject.Name, diyProject.startDate));
+            return Ok(await _manager.addProject_Async(diyProject.Name,
+                                                      diyProject.startDate, 
+                                                      diyProject.finishDate, 
+                                                      diyProject.thumbNail, 
+                                                      diyProject.addedBy, 
+                                                      diyProject.addedDate));
 
         }
 
