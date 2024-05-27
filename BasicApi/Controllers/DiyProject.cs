@@ -110,6 +110,38 @@ namespace BasicApi.Controllers
 
         }
 
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [EnableCors("OpenCORSPolicy")]
+        public async Task<IActionResult> DeleteProjectMaterial_Async(int id, string user)
+        {
+            try { 
+                await _manager.deleteMaterial_Async(id, user);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetProjectThumbnails_Async")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [EnableCors("OpenCORSPolicy")]
+        public async Task<string> GetProjectThumbnails_Async()
+        {
+            return await _manager.projectThumbnailGet_Async();
+
+        }
+
+        [HttpGet("GetProjectGalleryImagesByProjectId_Async")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [EnableCors("OpenCORSPolicy")]
+        public async Task<string> GetProjectGalleryImagesByProjectId_Async(int projectId)
+        {
+            return await _manager.projectGalleriesGetByProjectId_Async (projectId);
+
+        }
 
     }
 }
